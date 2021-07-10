@@ -7,51 +7,106 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!--link css-->
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
     <!--titulo-->
     <title>Dmarketing Point</title>
 </head>
 
 <body>
     <header>
-        <img src="" alt="logo">
+        <img src="media/logo 4.png" alt="logo">
         <nav>
-            <ul>
-                <li>Servicios</li>
-                <li>Portfolio</li>
-                <li>Quienes Somos</li>
-                <li>Contacto</li>
+            <ul class="nav">
+                <li class="nav-item"><a class="nav-link" href="#servicios">SERVICIOS</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">PORTFOLIO</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">QUIENES SOMOS</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">CONTACTO</a></li>
             </ul>
         </nav>
     </header>
 
-    <section>
+    <section class="seccion1">
         <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit</h1>
-        <button>Contactanos</button>
+        <button class="btn btn-danger">Contactanos</button>
     </section>
-    <section>
+    <section id="servicios">
         <!--Cards con bootstrap-->
-        <button>Ver mas servicios</button>
+        <div class="contenedorCards">
+            <div class="card" style="width: 18rem;">
+                <img src="https://picsum.photos/200" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                </div>
+            </div>
+            <div class="card" style="width: 18rem;">
+                <img src="https://picsum.photos/200" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+
+                </div>
+            </div>
+            <div class="card" style="width: 18rem;">
+                <img src="https://picsum.photos/200" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+
+                </div>
+            </div>
+            <div class="card" style="width: 18rem;">
+                <img src="https://picsum.photos/200" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+
+                </div>
+            </div>
+        </div>
+        <button class="btn btn-danger">Ver mas servicios</button>
     </section>
-    <section>
-        <div>
-            <img src="" alt="proyecto">
+    <section class="proyectos">
+        <div class="hijo">
+            <img src="https://picsum.photos/200" alt="proyecto">
             <p>titulo de proyecto</p>
         </div>
-        <div>
-            <img src="" alt="proyecto2">
+        <div class="hijo">
+            <img src="https://picsum.photos/200" alt="proyecto2">
             <p>titulo de proyecto</p>
         </div>
-        <div>
-            <img src="" alt="proyecto3">
+        <div class="hijo">
+            <img src="https://picsum.photos/200" alt="proyecto3">
             <p>titulo de proyecto</p>
         </div>
     </section>
-    <section>
-        <div>
-            <!-- carrusel con fotos de contacto -->
+    <section class="contacto">
+        <!-- carrusel con fotos de contacto -->
+        <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="https://picsum.photos/200" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="https://picsum.photos/200" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="https://picsum.photos/200" class="d-block w-100" alt="...">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
         </div>
-        <div>
-            <h2>Contactanos en nuestras redes sociales</h2>
+
+        <div class="redes">
+
+            <span>Contactanos en nuestras <br> redes sociales</span>
             <div>
                 <p>facebook</p>
                 <p>instagram</p>
@@ -60,18 +115,17 @@
         </div>
     </section>
     <footer>
-        <div>
-            <nav>
-                <ul>
-                    <li>Servicios</li>
-                    <li>Portfolio</li>
-                    <li>Quienes Somos</li>
-                    <li>Contacto</li>
-                </ul>
-            </nav>
-        </div>
-        <div>2021 | Dmarketing Point</div>
+        <nav>
+            <ul>
+                <li>Servicios |</li>
+                <li> Portfolio |</li>
+                <li> Quienes Somos |</li>
+                <li> Contacto</li>
+            </ul>
+        </nav>
+        <span>2021 | Dmarketing Point</span>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 </body>
 
 </html>
