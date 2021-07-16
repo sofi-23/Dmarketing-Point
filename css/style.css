@@ -59,7 +59,9 @@ body header nav ul li a:hover {
 }
 
 body .seccion1 {
-  background-image: url(../media/pexels-photo-2387793.jpeg);
+  background-image: url(../media/fondo_1.png);
+  background-repeat: no-repeat;
+
   background-color: black;
   color: white;
   height: 80vh;

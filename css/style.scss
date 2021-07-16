@@ -39,7 +39,8 @@ body {
         }
     }
     .seccion1 {
-        background-image: url(../media/pexels-photo-2387793.jpeg);
+        background-image: url(../media/fondo_1.png);
+        width: 100%;
         background-color: black;
         color: white;
         height: 80vh;
@@ -123,6 +124,9 @@ body {
                 justify-content: space-evenly;
                 margin-top: 10%;
             }
+        }
+        .fondoNaranja {
+            background: orange;
         }
     }
     footer {
