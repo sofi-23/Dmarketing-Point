@@ -14,14 +14,23 @@ body header {
   display: flex;
   -ms-flex-pack: distribute;
       justify-content: space-around;
+  height: 8vh;
 }
 
 body header img {
-  width: 30vh;
+  padding: .5rem;
+  width: 15vw;
 }
 
 body header nav {
-  width: 30%;
+  width: 40%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 body header nav ul {
@@ -31,6 +40,7 @@ body header nav ul {
   -ms-flex-pack: distribute;
       justify-content: space-around;
   list-style-type: none;
+  width: 100%;
 }
 
 body header nav ul li {
@@ -39,23 +49,39 @@ body header nav ul li {
 
 body header nav ul li a {
   text-decoration: none;
+  color: white;
+}
+
+body header nav ul li a:hover {
+  color: grey;
+  -webkit-transition: .5s;
+  transition: .5s;
 }
 
 body .seccion1 {
   background-image: url(../media/pexels-photo-2387793.jpeg);
   background-color: black;
   color: white;
-  height: 700px;
-}
-
-body .seccion1 h1 {
-  text-align: center;
-  padding-top: 5%;
+  height: 80vh;
+  max-height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 body .seccion1 .btn {
   margin-top: 5%;
-  margin-left: 46.5%;
+  padding: 1rem;
 }
 
 body #servicios {
@@ -79,17 +105,26 @@ body #servicios .contenedorCards {
 }
 
 body #servicios .contenedorCards .card {
-  margin-top: -15.4%;
-  margin-bottom: 20%;
+  position: relative;
+  top: -20vh;
+}
+
+body #servicios .contenedorCards .card img {
+  height: 20vh;
 }
 
 body #servicios button {
-  width: 20%;
-  margin-left: 40%;
+  width: 13%;
+  margin: auto;
+  padding: .8rem;
 }
 
-body .proyectos {
+body #proyectos {
   background-color: #bdbbbb;
+  padding: 7%;
+}
+
+body #proyectos .contenedorProyectos {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -99,7 +134,7 @@ body .proyectos {
   padding-bottom: 5%;
 }
 
-body .proyectos .hijo {
+body #proyectos .contenedorProyectos .hijoProyectos {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -112,9 +147,23 @@ body .proyectos .hijo {
   text-align: center;
 }
 
-body .proyectos .hijo img {
-  width: 300px;
-  height: 300px;
+body #proyectos .contenedorProyectos .hijoProyectos img {
+  width: 20vw;
+}
+
+body #proyectos .contenedorProyectos .hijoProyectos img:hover {
+  cursor: pointer;
+  -webkit-box-shadow: 1px 1px 5px grey;
+          box-shadow: 1px 1px 5px grey;
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+body #proyectos .btnProyectos {
+  display: block;
+  margin: auto;
+  width: 13%;
+  padding: .8rem;
 }
 
 body .contacto {
@@ -124,13 +173,12 @@ body .contacto {
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
-  padding-top: 5%;
-  padding-bottom: 5%;
+  padding: 7%;
 }
 
 body .contacto .carousel {
-  width: 500px;
-  height: 500px;
+  width: 30rem;
+  height: 30rem;
 }
 
 body .contacto .redes span {
@@ -165,6 +213,7 @@ body footer nav {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  padding: 1.3rem;
 }
 
 body footer nav ul {
@@ -178,8 +227,17 @@ body footer nav ul {
   width: 25%;
 }
 
+body footer nav ul .footerNavItems:hover {
+  color: white;
+  -webkit-transition: .5s;
+  transition: .5s;
+  cursor: pointer;
+}
+
 body footer span {
   background-color: #bdbbbb;
   text-align: center;
+  padding: .5rem;
+  font-size: .9em;
 }
 /*# sourceMappingURL=style.css.map */
