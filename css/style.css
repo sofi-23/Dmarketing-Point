@@ -1,6 +1,8 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap");
 * {
   margin: 0;
   padding: 0;
+  font-family: 'Roboto', sans-serif;
 }
 
 body {
@@ -60,8 +62,8 @@ body header nav ul li a:hover {
 
 body .seccion1 {
   background-image: url(../media/fondo_1.png);
-  background-repeat: no-repeat;
-
+  background-size: cover;
+  width: 100%;
   background-color: black;
   color: white;
   height: 80vh;
@@ -113,6 +115,7 @@ body #servicios .contenedorCards .card {
 
 body #servicios .contenedorCards .card img {
   height: 20vh;
+  width: auto;
 }
 
 body #servicios button {
@@ -121,66 +124,33 @@ body #servicios button {
   padding: .8rem;
 }
 
-body #proyectos {
-  background-color: #bdbbbb;
-  padding: 7%;
-}
-
-body #proyectos .contenedorProyectos {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  padding-top: 5%;
-  padding-bottom: 5%;
-}
-
-body #proyectos .contenedorProyectos .hijoProyectos {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  text-align: center;
-}
-
-body #proyectos .contenedorProyectos .hijoProyectos img {
-  width: 20vw;
-}
-
-body #proyectos .contenedorProyectos .hijoProyectos img:hover {
-  cursor: pointer;
-  -webkit-box-shadow: 1px 1px 5px grey;
-          box-shadow: 1px 1px 5px grey;
-  -webkit-transition: .5s;
-  transition: .5s;
-}
-
-body #proyectos .btnProyectos {
-  display: block;
-  margin: auto;
-  width: 13%;
-  padding: .8rem;
-}
-
 body .contacto {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
   padding: 7%;
 }
 
 body .contacto .carousel {
   width: 30rem;
   height: 30rem;
+}
+
+body .contacto .carousel .carousel-inner {
+  height: 100%;
+  background: #FEFDFC;
+}
+
+body .contacto .carousel .carousel-inner .carousel-item {
+  height: 100%;
+}
+
+body .contacto .carousel .carousel-inner .carousel-item img {
+  height: inherit;
+  margin: auto;
+  padding: 1rem;
+}
+
+body .contacto .carousel .carousel-control {
+  border: none;
+  background: #FEFDFC;
 }
 
 body .contacto .redes span {
@@ -197,6 +167,18 @@ body .contacto .redes div {
   margin-top: 10%;
 }
 
+body .contacto .fondoNaranja {
+  background: #F9E8D4;
+  border-left: 0.5rem solid #FF9A51;
+  height: 40%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 67.36%;
+  margin-left: 30%;
+  padding: 2rem;
+}
+
 body footer {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -208,7 +190,7 @@ body footer {
 }
 
 body footer nav {
-  background-color: #8f8d8d;
+  background-color: #323852;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
