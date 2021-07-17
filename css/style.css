@@ -1,6 +1,7 @@
 * {
   margin: 0;
   padding: 0;
+  --naranja: #ff9a51;
 }
 
 body {
@@ -8,7 +9,6 @@ body {
 }
 
 body header {
-  background-color: #bdbbbb;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -20,6 +20,7 @@ body header {
 body header img {
   padding: .5rem;
   width: 15vw;
+  height: auto;
 }
 
 body header nav {
@@ -58,11 +59,13 @@ body header nav ul li a:hover {
   transition: .5s;
 }
 
-body .seccion1 {
+body .fondoasd {
   background-image: url(../media/fondo_1.png);
-  background-repeat: no-repeat;
+  background-size: cover;
+}
 
-  background-color: black;
+body .seccion1 {
+  width: 100%;
   color: white;
   height: 80vh;
   max-height: 100vh;
@@ -113,6 +116,7 @@ body #servicios .contenedorCards .card {
 
 body #servicios .contenedorCards .card img {
   height: 20vh;
+  width: auto;
 }
 
 body #servicios button {
@@ -121,22 +125,40 @@ body #servicios button {
   padding: .8rem;
 }
 
-body #proyectos {
-  background-color: #bdbbbb;
-  padding: 7%;
-}
-
-body #proyectos .contenedorProyectos {
+body .acercaDe {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  padding-top: 5%;
-  padding-bottom: 5%;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  height: 100vh;
 }
 
-body #proyectos .contenedorProyectos .hijoProyectos {
+body .acercaDe .fondo {
+  background-image: url(../media/fondo_2.png);
+  background-size: cover;
+  height: 90vh;
+  width: 120vh;
+  -ms-flex-preferred-size: 60%;
+      flex-basis: 60%;
+  position: absolute;
+}
+
+body .acercaDe .prueba {
+  -ms-flex-preferred-size: 40%;
+      flex-basis: 40%;
+}
+
+body .acercaDe .prueba .contenido {
+  margin-left: 100vh;
+  height: 55vh;
+  width: 75vh;
+  background-color: white;
+  margin-top: 17vh;
+  position: absolute;
+  padding: 5vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -144,31 +166,23 @@ body #proyectos .contenedorProyectos .hijoProyectos {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  text-align: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  border-radius: 3%;
 }
 
-body #proyectos .contenedorProyectos .hijoProyectos img {
-  width: 20vw;
+body .acercaDe .prueba .contenido img {
+  height: auto;
+  width: 100%;
 }
 
-body #proyectos .contenedorProyectos .hijoProyectos img:hover {
-  cursor: pointer;
-  -webkit-box-shadow: 1px 1px 5px grey;
-          box-shadow: 1px 1px 5px grey;
-  -webkit-transition: .5s;
-  transition: .5s;
+body .acercaDe .prueba .contenido h3 {
+  font-size: 150%;
+  color: var(--naranja);
 }
 
-body #proyectos .btnProyectos {
-  display: block;
-  margin: auto;
-  width: 13%;
-  padding: .8rem;
-}
-
-body .contacto {
+.contacto {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -178,16 +192,16 @@ body .contacto {
   padding: 7%;
 }
 
-body .contacto .carousel {
+.contacto .carousel {
   width: 30rem;
   height: 30rem;
 }
 
-body .contacto .redes span {
+.contacto .redes span {
   font-size: 300%;
 }
 
-body .contacto .redes div {
+.contacto .redes div {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -197,7 +211,11 @@ body .contacto .redes div {
   margin-top: 10%;
 }
 
-body footer {
+.contacto .fondoNaranja {
+  background: orange;
+}
+
+footer {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -207,7 +225,7 @@ body footer {
           flex-direction: column;
 }
 
-body footer nav {
+footer nav {
   background-color: #8f8d8d;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -218,7 +236,7 @@ body footer nav {
   padding: 1.3rem;
 }
 
-body footer nav ul {
+footer nav ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -229,17 +247,18 @@ body footer nav ul {
   width: 25%;
 }
 
-body footer nav ul .footerNavItems:hover {
+footer nav ul .footerNavItems:hover {
   color: white;
   -webkit-transition: .5s;
   transition: .5s;
   cursor: pointer;
 }
 
-body footer span {
+footer span {
   background-color: #bdbbbb;
   text-align: center;
   padding: .5rem;
   font-size: .9em;
+  width: 100%;
 }
 /*# sourceMappingURL=style.css.map */
