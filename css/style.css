@@ -249,8 +249,6 @@ body .contacto .redes div {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: nowrap;
-      flex-wrap: nowrap;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -262,18 +260,19 @@ body .contacto .redes div {
 }
 
 body .contacto .redes div span {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: nowrap;
-      flex-wrap: nowrap;
   color: #3E415C;
   font-weight: 500;
   font-size: 1.3em;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
 }
 
 body .contacto .redes div span .iconoRedes {
   width: 3rem;
+}
+
+body .contacto .redes div span p {
+  display: inline-block;
 }
 
 body .contacto .fondoNaranja {
@@ -289,34 +288,33 @@ body .contacto .fondoNaranja {
 }
 
 footer {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: inline-block;
   background-color: #323852;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
 
-footer .logoFooter {
-  width: 228px;
+footer .row {
+  width: 100%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
-footer nav {
-  background-color: #8f8d8d;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+footer .row .footerLogoContainer {
+  margin-left: 10%;
+  width: 100%;
 }
 
-footer nav nav {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+footer .row .footerLogoContainer .logoFooter {
+  width: 100%;
+}
+
+footer .row nav {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -324,18 +322,24 @@ footer nav nav {
   width: 25%;
 }
 
-footer nav nav .footerNavItems:hover {
-  color: white;
+footer .row nav ul {
+  list-style: none;
+}
+
+footer .row nav ul li a {
+  text-decoration: none;
+  color: #ffff;
+}
+
+footer .row nav ul li a:hover {
+  color: #A8A8B9;
   -webkit-transition: .5s;
   transition: .5s;
   cursor: pointer;
 }
 
-footer span {
-  background-color: #bdbbbb;
-  text-align: center;
-  padding: .5rem;
+footer .row span {
   font-size: .9em;
-  width: 100%;
+  color: #A8A8B9;
 }
 /*# sourceMappingURL=style.css.map */

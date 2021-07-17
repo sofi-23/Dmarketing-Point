@@ -166,19 +166,22 @@ body {
                 }
                 div {
                     display: flex;
-                    flex-wrap: nowrap;
+                    
                     flex-direction: column;
                     justify-content: space-evenly;
                     margin-top: 10%;
                     span {
-                        display: flex;
-                        flex-wrap: nowrap;
                         color: #3E415C;
                         font-weight: 500;
                         font-size: 1.3em;
+                        flex-wrap: nowrap;
+
                     .iconoRedes {
                         width: 3rem;
 
+                    }
+                    p {
+                        display:inline-block;
                     }
                 }
                 }
@@ -200,36 +203,45 @@ body {
 }
 
 footer {
-    display: flex;
+    display: inline-block;
     background-color: $mainBlue;
     justify-content:space-between;
-    .logoFooter {
-        width: 228px;
+    .row {
+        width: 100%;
+        justify-content: space-between;
+        align-items: center;
+        .footerLogoContainer {
+            margin-left: 10%;
+            width: 100%;
+            .logoFooter {
+                width: 100%;
+            }
     }
-    nav {
-        background-color: rgb(143, 141, 141);
-        display: flex;
-        flex-direction: column;
+
         nav {
-            
-            display: flex;
             justify-content: space-between;
             list-style-type: none;
             width: 25%;
-            .footerNavItems {
-                &:hover {
-                    color: white;
-                    transition: .5s;
-                    cursor: pointer;
+            ul {
+                list-style: none;
+                li{
+                    a{
+                        text-decoration: none;
+                        color: #ffff;
+                        &:hover {
+                            color:#A8A8B9;
+                            transition: .5s;
+                            cursor: pointer;
+                        }
+                    }
                 }
+
             }
         }
-    }
+    
     span {
-        background-color: rgb(189, 187, 187);
-        text-align: center;
-        padding: .5rem;
         font-size: .9em;
-        width: 100%;
+        color: #A8A8B9;
     }
+}
 }
