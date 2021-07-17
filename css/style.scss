@@ -3,20 +3,12 @@
 * {
     margin: 0;
     padding: 0;
-<<<<<<< HEAD
     font-family: 'Roboto', sans-serif;
-=======
-    --naranja: #ff9a51;
->>>>>>> 19d5a5ed2519118f17cfc8563402eacf960d0745
 }
 
 body {
-    font-family: Arial, Helvetica, sans-serif;
     header {
-<<<<<<< HEAD
         background-color: rgba(189, 187, 187, 1);
-=======
->>>>>>> 19d5a5ed2519118f17cfc8563402eacf960d0745
         display: flex;
         justify-content: space-around;
         height: 8vh;
@@ -52,11 +44,6 @@ body {
     .fondoasd {
         background-image: url(../media/fondo_1.png);
         background-size: cover;
-<<<<<<< HEAD
-=======
-    }
-    .seccion1 {
->>>>>>> 19d5a5ed2519118f17cfc8563402eacf960d0745
         width: 100%;
         color: white;
         height: 80vh;
@@ -65,10 +52,16 @@ body {
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        .seccion1 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        
         .btn {
             margin-top: 5%;
             padding: 1rem;
-        }
+        }}
     }
     #servicios {
         display: flex;
@@ -93,50 +86,6 @@ body {
             padding: .8rem;
         }
     }
-<<<<<<< HEAD
-    .contacto {
-        padding: 7%;
-        .carousel {
-            width: 30rem;
-            height: 30rem;
-            .carousel-inner {
-                height: 100%;
-                background: $whiteBackground;
-                .carousel-item {
-                    height: 100%;
-                    img {
-                        height: inherit;
-                        margin: auto;
-                        padding: 1rem;
-                    }
-                }
-            }
-            .carousel-control {
-                border: none;
-                background: $whiteBackground;
-            }
-        }
-            .redes {
-                span {
-                    font-size: 300%;
-                }
-                div {
-                    display: flex;
-                    justify-content: space-evenly;
-                    margin-top: 10%;
-                }
-            }
-         
-        .fondoNaranja {
-            background: $orangeI3;
-            border-left: .5rem solid $mainOrange;
-            height: 40%; 
-            display: flex;
-            width:67.36%;
-            margin-left: 30%;
-            padding: 2rem;
-
-=======
     .acercaDe {
         display: flex;
         flex-direction: row;
@@ -174,48 +123,78 @@ body {
             }
         }
     }
-}
+    .contacto {
+        padding: 7%;
+        .carousel {
+            width: 35rem;
+            height: 30rem;
+            position: relative;
+            box-shadow: 0px 2px 9px 0px #A8A8B94D;
 
-.contacto {
-    display: flex;
-    justify-content: space-evenly;
-    padding: 7%;
-    .carousel {
-        width: 30rem;
-        height: 30rem;
-    }
-    .redes {
-        span {
-            font-size: 300%;
+            right: 30%;
+            .carousel-inner {
+                height: 100%;
+                background: $whiteBackground;
+                .carousel-item {
+                    height: 100%;
+                    img {
+                        height: inherit;
+                        margin: auto;
+                        padding: 1rem;
+                    }
+                }
+            }
+            .carousel-control {
+                border: none;
+                background: $whiteBackground;
+            }
         }
-        div {
+            .redes {
+                position: relative;
+                right: 28%;
+                .contactanosTexto {
+                    color: $mainBlue;
+                    font-size: 3.2em;
+                    font-weight: 700;
+               
+                    .contactanosTextoSpan {
+                        color: $mainOrange;
+                        font-weight: 900;
+                        display: block;
+                    }
+                }
+                div {
+                    display: flex;
+                    justify-content: space-evenly;
+                    margin-top: 10%;
+                }
+            }
+         
+        .fondoNaranja {
+            background: $orangeI3;
+            border-left: .5rem solid $mainOrange;
+            height: 40%; 
             display: flex;
-            justify-content: space-evenly;
-            margin-top: 10%;
->>>>>>> 19d5a5ed2519118f17cfc8563402eacf960d0745
+            width:65%;
+            margin-left: 30%;
+            padding: 2rem;
+
         }
     
     }
-    .fondoNaranja {
-        background: orange;
-    }
+
 }
 
 footer {
     display: flex;
     flex-direction: column;
+    background-color: $mainBlue;
     nav {
         background-color: rgb(143, 141, 141);
         display: flex;
-<<<<<<< HEAD
         flex-direction: column;
         nav {
-            background-color: $mainBlue;
-=======
-        justify-content: center;
-        padding: 1.3rem;
-        ul {
->>>>>>> 19d5a5ed2519118f17cfc8563402eacf960d0745
+            
             display: flex;
             justify-content: space-between;
             list-style-type: none;
