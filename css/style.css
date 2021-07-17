@@ -2,7 +2,11 @@
 * {
   margin: 0;
   padding: 0;
+<<<<<<< HEAD
   font-family: 'Roboto', sans-serif;
+=======
+  --naranja: #ff9a51;
+>>>>>>> 19d5a5ed2519118f17cfc8563402eacf960d0745
 }
 
 body {
@@ -10,7 +14,6 @@ body {
 }
 
 body header {
-  background-color: #bdbbbb;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -22,6 +25,7 @@ body header {
 body header img {
   padding: .5rem;
   width: 15vw;
+  height: auto;
 }
 
 body header nav {
@@ -60,11 +64,18 @@ body header nav ul li a:hover {
   transition: .5s;
 }
 
-body .seccion1 {
+body .fondoasd {
   background-image: url(../media/fondo_1.png);
   background-size: cover;
+<<<<<<< HEAD
   width: 100%;
   background-color: black;
+=======
+}
+
+body .seccion1 {
+  width: 100%;
+>>>>>>> 19d5a5ed2519118f17cfc8563402eacf960d0745
   color: white;
   height: 80vh;
   max-height: 100vh;
@@ -124,6 +135,7 @@ body #servicios button {
   padding: .8rem;
 }
 
+<<<<<<< HEAD
 body .contacto {
   padding: 7%;
 }
@@ -151,13 +163,85 @@ body .contacto .carousel .carousel-inner .carousel-item img {
 body .contacto .carousel .carousel-control {
   border: none;
   background: #FEFDFC;
+=======
+body .acercaDe {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  height: 100vh;
 }
 
-body .contacto .redes span {
+body .acercaDe .fondo {
+  background-image: url(../media/fondo_2.png);
+  background-size: cover;
+  height: 90vh;
+  width: 120vh;
+  -ms-flex-preferred-size: 60%;
+      flex-basis: 60%;
+  position: absolute;
+}
+
+body .acercaDe .prueba {
+  -ms-flex-preferred-size: 40%;
+      flex-basis: 40%;
+}
+
+body .acercaDe .prueba .contenido {
+  margin-left: 100vh;
+  height: 55vh;
+  width: 75vh;
+  background-color: white;
+  margin-top: 17vh;
+  position: absolute;
+  padding: 5vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  border-radius: 3%;
+}
+
+body .acercaDe .prueba .contenido img {
+  height: auto;
+  width: 100%;
+}
+
+body .acercaDe .prueba .contenido h3 {
+  font-size: 150%;
+  color: var(--naranja);
+}
+
+.contacto {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  padding: 7%;
+}
+
+.contacto .carousel {
+  width: 30rem;
+  height: 30rem;
+>>>>>>> 19d5a5ed2519118f17cfc8563402eacf960d0745
+}
+
+.contacto .redes span {
   font-size: 300%;
 }
 
-body .contacto .redes div {
+.contacto .redes div {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -167,6 +251,7 @@ body .contacto .redes div {
   margin-top: 10%;
 }
 
+<<<<<<< HEAD
 body .contacto .fondoNaranja {
   background: #F9E8D4;
   border-left: 0.5rem solid #FF9A51;
@@ -180,6 +265,13 @@ body .contacto .fondoNaranja {
 }
 
 body footer {
+=======
+.contacto .fondoNaranja {
+  background: orange;
+}
+
+footer {
+>>>>>>> 19d5a5ed2519118f17cfc8563402eacf960d0745
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -189,8 +281,13 @@ body footer {
           flex-direction: column;
 }
 
+<<<<<<< HEAD
 body footer nav {
   background-color: #323852;
+=======
+footer nav {
+  background-color: #8f8d8d;
+>>>>>>> 19d5a5ed2519118f17cfc8563402eacf960d0745
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -200,7 +297,7 @@ body footer nav {
   padding: 1.3rem;
 }
 
-body footer nav ul {
+footer nav ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -211,17 +308,18 @@ body footer nav ul {
   width: 25%;
 }
 
-body footer nav ul .footerNavItems:hover {
+footer nav ul .footerNavItems:hover {
   color: white;
   -webkit-transition: .5s;
   transition: .5s;
   cursor: pointer;
 }
 
-body footer span {
+footer span {
   background-color: #bdbbbb;
   text-align: center;
   padding: .5rem;
   font-size: .9em;
+  width: 100%;
 }
 /*# sourceMappingURL=style.css.map */
