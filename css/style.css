@@ -287,7 +287,7 @@ body .contacto .fondoNaranja {
   padding: 2rem;
 }
 
-footer {
+body footer {
   display: inline-block;
   background-color: #323852;
   -webkit-box-pack: justify;
@@ -295,7 +295,7 @@ footer {
           justify-content: space-between;
 }
 
-footer .row {
+body footer .row {
   width: 100%;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
@@ -305,16 +305,16 @@ footer .row {
           align-items: center;
 }
 
-footer .row .footerLogoContainer {
+body footer .row .footerLogoContainer {
   margin-left: 10%;
   width: 100%;
 }
 
-footer .row .footerLogoContainer .logoFooter {
+body footer .row .footerLogoContainer .logoFooter {
   width: 100%;
 }
 
-footer .row nav {
+body footer .row nav {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -322,23 +322,23 @@ footer .row nav {
   width: 25%;
 }
 
-footer .row nav ul {
+body footer .row nav ul {
   list-style: none;
 }
 
-footer .row nav ul li a {
+body footer .row nav ul li a {
   text-decoration: none;
   color: #ffff;
 }
 
-footer .row nav ul li a:hover {
+body footer .row nav ul li a:hover {
   color: #A8A8B9;
   -webkit-transition: .5s;
   transition: .5s;
   cursor: pointer;
 }
 
-footer .row span {
+body footer .row span {
   font-size: .9em;
   color: #A8A8B9;
 }
